@@ -1,8 +1,3 @@
-Here is a **professional, clean, and detailed README.md** for your **To-Do List Project**.
-You can directly copy-paste it into your GitHub repo.
-
----
-
 # 📌 To-Do List Web App
 
 A simple and clean **To-Do List** web application built using **HTML, CSS, and JavaScript**.
@@ -43,7 +38,7 @@ Styled with pure CSS for a minimal and pleasant user experience.
 
 * **HTML5** – Structure
 * **CSS3** – Styling
-* **JavaScript (Vanilla JS)** – Functionality & DOM Manipulation
+* **JavaScript** – Functionality & DOM Manipulation
 
 ---
 
