@@ -40,7 +40,6 @@ addTaskButton.addEventListener('click', function (event) {
     let deleteBtn = task.querySelector("button");
     deleteBtn.addEventListener("click", () => {
         task.remove();
-        taskCount--;
         heading();
     });
 
