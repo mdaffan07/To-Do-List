@@ -3,6 +3,17 @@ let taskContainer = document.getElementById('task-container');
 let taskMessage = document.getElementById('task-message');
 let taskCount = 1;
 
+function heading() {
+    let totalTasks = taskContainer.querySelectorAll(".task-list-card:not(#task-list-0)").length;
+
+    if (totalTasks >= 1) {
+        document.querySelector('.heading').innerHTML = "Tasks to do...";
+    }
+    else{
+        document.querySelector('.heading').innerHTML = "";
+    }
+}
+
 addTaskButton.addEventListener('click', function (event) {
     event.preventDefault();
 
@@ -29,6 +40,8 @@ addTaskButton.addEventListener('click', function (event) {
     let deleteBtn = task.querySelector("button");
     deleteBtn.addEventListener("click", () => {
         task.remove();
+        taskCount--;
+        heading();
     });
 
     // Add checkbox strike-through effect
@@ -45,6 +58,7 @@ addTaskButton.addEventListener('click', function (event) {
 
     // Add to top
     taskContainer.prepend(task);
+    heading();
 
     // Clear input
     taskMessage.value = "";
